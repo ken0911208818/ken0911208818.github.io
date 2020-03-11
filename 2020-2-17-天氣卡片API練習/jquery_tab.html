@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: gray;
+        }
+        .tab{
+            width: 600px;
+            border: 3px solid black;
+            border-radius: 10px;
+            border-top: 0;
+            border-bottom: 0;
+                        
+        }
+         .tabs-title{
+            display: flex;
+            
+            
+        }
+        .tab-title{
+            width: 200px;
+            text-align: center;
+            padding: 30px 15px;
+            background-color: darkgray;
+            border-top: 3px solid black;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom: 3px solid black;
+        }
+        
+        .tab-title:nth-child(1) , .tab-title:nth-child(2){
+            border-right: 3px solid black;
+        }
+        .tabs-content{            
+            padding: 30px 30px;
+            border-bottom: 3px solid black;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+            background-color: white;
+        }
+        .tab-content{
+            display: none;
+            
+        }
+        .tab-title.active{
+            border-bottom: 0;
+            background-color: white;
+        }
+        .tab-content.active{
+            display: block;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tab">
+        <div class="tabs-title">
+            <!-- onclick= "XXX()" 當此物件按下滑鼠時執行XXX函式 -->
+            <div id="btn1" class="tab-title" >分頁一</div>
+            <div id="btn2" class="tab-title active" >分頁二</div>
+            <div id="btn3" class="tab-title" >分頁三</div>
+
+        </div>
+
+        <div class="tabs-content">
+            <div id="content1" class="tab-content ">
+                <h1>分頁一</h1>
+                <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus facilis, pariatur
+                    hic dolore quos cupiditate.</div>
+            </div>
+            <div id="content2" class="tab-content active">
+                <h1>分頁二</h1>
+                <div class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, voluptates.
+                </div>
+            </div>
+            <div id="content3" class="tab-content ">
+                <h1>分頁三</h1>
+                <div class="content">Lorem ipsum dolor sit amet.</div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="./js/jquery_tab.js"></script>
+</body>
+
+</html>

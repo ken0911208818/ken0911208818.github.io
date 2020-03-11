@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    body{
+     margin: 0;
+        
+    }
+    
+    @media screen and (min-width: 1024px){
+        #main{
+        
+        width: 1024px;
+        height: 500px;
+        margin: auto;
+        padding: calc(50vh - 250px) 0;
+    }
+    .main-style{
+        width: 334px;
+        height: 500px;
+        float: left;
+        transition: 0.8s;
+    }
+    #left{
+        background-image: url("img/cat1.jpg");
+        background-size: cover;
+        margin-right: 10px;
+        
+    }
+    #mid{
+        background-image: url("img/cat2.jpg");
+        background-size: cover;
+        margin-right: 10px;
+    }
+    #right{
+        background-image: url("img/cat3.jpg");
+        background-size:cover;
+        transition: 1s;
+    }
+    .mask{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.8);
+        transition: 1s;
+    }
+    .mask:hover{
+        background-color: rgba(0,0,0,0);
+    } 
+        
+    }
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        #main{
+        
+        width: 738px;
+        height: 994px;
+        margin: auto;
+        padding: calc(50vh - 497px) 0;
+    }
+    .main-style{      
+        
+        transition: 0.8s;
+    }
+    #left{
+        width: 738px;
+        height: 492px;
+        background-image: url("img/cat1.jpg");
+        background-size: cover;
+        margin-bottom: 10px;
+        
+    }
+    #mid{
+        float: left;
+        width: 364px;
+        height: 492px;
+        background-image: url("img/cat2.jpg");
+        background-size: cover;
+        margin-right: 10px;
+    }
+    #right{
+        
+        float: right;
+        width: 364px;
+        height: 492px;
+        background-image: url("img/cat3.jpg");
+        background-size:cover;
+        transition: 1s;
+    }
+    .mask{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.8);
+        transition: 1s;
+    }
+    .mask:active{
+        background-color: rgba(0,0,0,0);
+    }
+    }
+    @media screen and (max-width: 767px){
+        #main{
+        
+        width: 100%;
+        height: 150vh;
+        margin: auto;
+        
+    }
+    .main-style{
+        width: 100%;
+        height: 50vh;        
+        transition: 0.8s;
+    }
+    #left{
+        background-image: url("img/cat1.jpg");
+        background-size: cover;
+        
+        
+    }
+    #mid{
+        background-image: url("img/cat2.jpg");
+        background-size: cover;
+        
+    }
+    #right{
+        background-image: url("img/cat3.jpg");
+        background-size:cover;
+        
+    }
+    .mask{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.8);
+        transition: 1s;
+    }
+    .mask:active{
+        background-color: rgba(0,0,0,0);
+    }   
+    }
+    </style>
+    <!-- @media screen and (max-width: 767px) : 指在不同尺寸下有不同的表現方式 注意!!screen 後面的and的部分都要!!空格!! 可以指定範圍執行想執行的CSS -->
+</head>
+<body>
+    <div id="main">
+        <div id="left" class="main-style">
+            <div class="mask"></div>
+        </div>
+        <div id="mid" class="main-style">
+            <div class="mask"></div>
+        </div>
+        <div id="right" class="main-style">
+            <div class="mask"></div>
+        </div>     
+    </div>
+</body>
+</html>

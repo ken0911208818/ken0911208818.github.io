@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    body{
+     margin: 0;
+        
+    }
+    #main{
+        
+        width: 100%;
+        height: 150vh;
+        margin: auto;
+        
+    }
+    .main-style{
+        width: 100%;
+        height: 50vh;        
+        transition: 2s;
+    }
+    #left{
+        background-image: url("img/cat1.jpg");
+        background-size: cover;
+        
+        
+    }
+    #mid{
+        background-image: url("img/cat2.jpg");
+        background-size: cover;
+        
+    }
+    #right{
+        background-image: url("img/cat3.jpg");
+        background-size:cover;
+        
+    }
+    .mask{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.8);
+        transition: 2s;
+    }
+    .mask:active{
+        background-color: rgba(0,0,0,0);
+    }
+    </style>
+    
+</head>
+<body>
+    <div id="main">
+        <div id="left" class="main-style">
+            <div class="mask"></div>
+        </div>
+        <div id="mid" class="main-style">
+            <div class="mask"></div>
+        </div>
+        <div id="right" class="main-style">
+            <div class="mask"></div>
+        </div>     
+    </div>
+</body>
+</html>

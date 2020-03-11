@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    html{
+        scroll-behavior: smooth;
+        /* scroll-behavior: smooth; 拖拉卷軸時較為緩慢 */
+    }
+    body{
+        
+        margin: 0;
+        background-image: url("img/background1.jpg");
+    }
+    .vh{
+        width: 100%;
+        height: 50vh;
+    }
+    .vh100{
+        margin: auto;        
+        height: 100vh;
+        
+    }
+    .vh50{
+        width: 100%;
+        height: 100px;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: calc(25vh - 50px) 0;
+    }
+    .background{
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    #top{
+        background-image: url("img/back1.jpg");        
+    }
+    #mid{
+        background-image: url("img/back2.jpg");        
+    }
+    #btm{
+        background-image: url("img/back3.jpg");        
+    }
+    #main{
+        width: 80%;
+        margin: auto;
+    }
+    .btn{
+        background-color: red;
+        width: 200px;
+        height: 100px;
+        margin: auto;
+        
+    }
+    #person{
+        width: 160px;
+        height: 160px;
+        background-image: url("img/person.jpg");
+        background-size: cover;
+        border: 5px solid white;
+        border-radius: 80px;
+        float: left;
+    }
+    #navbar{
+        width: calc(80% - 30px);
+       position: fixed;
+       padding: 0 15px;
+       left: 10%;
+    }
+    #text{
+        /* position: fixed; */
+        float: right;
+        right: 10%;
+    }
+    .textA{
+        color: red;
+        top: 60px;
+        position: relative;
+        padding: 10px 10px;
+        float: left;
+        border:  2px solid white;
+        margin-left: 15px;
+        transition: 1s;
+    }
+    a{
+        color:red
+    }
+    a:visited .textA{
+        color: black;
+        background-color: red;
+    }
+    a:hover .textA{
+        color: white;
+        background-color: green;
+        font-size: 20px;
+    }
+    a:active .textA{
+        color: blue;
+        background-color: black;
+    }    
+    /* visited>hover>active 順序很重要 */
+    /* active:滑鼠點下的動作 hover:滑鼠滑上去碰到會執行的動作 visited:是指拜訪過的動作 */
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="navbar">
+            <div id="person"></div>
+            <div id="text">
+                <a href="#top"><div class="textA">按鈕A</div></a>
+                <a href="#mid"><div class="textA">按鈕B</div></a>
+                <a href="#btm"><div class="textA">按鈕C</div></a>           
+           </div>
+        </div>
+        <div id="top" class="vh100 background">
+            <div class="vh"></div>
+            <div class="vh50">
+                <div class="btn"></div>
+            </div>
+        </div>
+        <div id="mid" class="vh100 background">
+            <div class="vh"></div>
+            <div class="vh50">
+                <div class="btn"></div>
+            </div>
+        </div>
+        <div id="btm" class="vh100 background">
+            <div class="vh"></div>
+            <div class="vh50">
+                <div class="btn"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

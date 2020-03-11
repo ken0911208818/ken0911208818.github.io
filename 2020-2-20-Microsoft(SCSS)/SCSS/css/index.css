@@ -1,0 +1,95 @@
+
+
+
+
+
+
+
+
+
+
+
+.product:nth-child(5){
+    padding-top: unset;
+}
+
+@media(max-width:860px){
+    
+    
+    
+    
+    figure{
+        margin-bottom: -10px;
+    }
+    
+    h1.fon{
+        margin-top: 70px;
+    }
+    
+    
+    
+}
+@media(max-width:767px) {
+    
+    
+   
+    
+    
+    
+    
+    
+    
+    
+    .all {
+        min-width: 630px;
+    }
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+   
+
+      
+
+    
+
+    
+
+
+    .connect {
+        padding: unset;
+        /* padding: 0 10%; */
+    }
+
+    
+
+    
+
+    
+    
+    
+    
+}
+
+@media(max-width:540px) {
+        
+    .bbb{
+        margin-top: 48px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}

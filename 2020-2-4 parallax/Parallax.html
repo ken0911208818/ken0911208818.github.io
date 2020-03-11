@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+body{
+    margin: 0;    
+    /* VH:可視畫面大小 EX:50vh指瀏覽器一半的畫面 */
+    background-image: url("img/background1.jpg");
+    
+    
+}
+#main{
+    width: 80%;
+    margin: auto;
+    
+}
+.vh50{
+    height: 50vh;
+    width: 100%;
+    
+}
+.vh100{
+    height: 100vh;
+    width: 100%;
+}
+.small{
+    width: 200px;
+    height: 100px;
+    background-color: red;
+    margin: auto;
+    /* margin: auto; 水平置中*/
+    
+}
+.black{
+    background-color: rgba(0, 0, 0, 0.6);
+    /* RGBA(R,G,B,透明) */
+}
+#boxA{
+    background-image: url("img/back1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    /* background-size: cover; 當圖片大於容器大小時 會自動縮放進入容器中*/
+    
+}
+ #person{
+    border: 5px solid white;
+    border-radius: 80px;
+    /* position: relative; */
+    position: fixed;
+    background-image: url("img/person.jpg");
+    background-size: cover;
+    width: 160px;
+    height: 160px;
+    /* float: left; */
+     
+}
+#text{
+    /* float: right ; */
+    width: calc(100%-160px);
+    height: 40px;
+    padding: 60px 0px;
+    position: fixed;
+
+    /* position: absolute; */
+    right: 10%;
+    
+}
+.font{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 40px;
+    float: right ;
+    line-height: 40px;
+    border: 1px solid white;
+    padding: 0 20px;
+}
+#boxA1{
+    position: relative;
+    
+}
+
+#boxA2{
+    height: 100px;    
+    padding: calc(25vh - 50px) 0px;
+    
+
+}
+
+#boxB{
+    background-image: url("img/back2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+#boxB2{
+    height: 100px;    
+    padding: calc(25vh - 50px) 0px;
+    
+}
+#boxC{
+    background-image: url("img/back3.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    /* background-attachment: fixed 將背景固定住 讓其他物件能順者卷軸滑動 */
+}
+#boxC2{
+    height: 100px;    
+    padding: calc(25vh - 50px) 0px;
+    
+}
+.fixed{
+    position: fixed;
+}
+a{
+    color: white;
+    text-decoration: none;
+    /* text-decoration: none; 隱藏底線 */
+}
+</style>
+<body>
+    <div id="main">
+    <div id="boxA">
+      <div id="boxA1" class="vh50">          
+          <div id="person" class="fixed"></div>
+          <div id="text">
+              <div id="text1" class="font" >
+                <a href="#boxC" colo>圖片3</a>    
+              </div>
+              <div id="text2" class="font" >
+                <a href="#boxB">圖片2</a>
+              </div>
+              <div id="text3" class="font" >
+                <a href="#boxA">圖片1</a>    
+              </div>
+          </div>
+      </div>
+      <div id="boxA2" class="vh50 black" >
+          <div class="small"></div>
+      </div>  
+    </div>
+    <div id="boxB">
+        <div id="boxB1" class="vh50" href="#mid"></div>
+        <div id="boxB2" class="vh50 black">
+            <div class="small"></div>
+        </div>
+    </div>
+    <div id="boxC">
+        <div id="boxC1" class="vh50" href="#btm"></div>
+        <div id="boxC2" class="vh50 black">
+            <div class="small"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

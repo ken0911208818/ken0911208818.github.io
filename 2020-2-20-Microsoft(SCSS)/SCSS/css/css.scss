@@ -1,0 +1,413 @@
+@import './Common.scss';
+
+@media(max-width: 1400px){
+
+}
+@media(max-width: 1080px){
+
+}
+@media(max-width:860px){
+
+}
+@media(max-width:767px){
+
+}
+@media(max-width:540px){
+
+}
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Segoe UI',SegoeUI,'Microsoft JhengHei',微軟正黑體,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+
+.navbar{
+    width: 100%;
+    height: 54px;
+    margin-bottom: 1px;
+    display: flex;
+
+    @media(max-width:767px){
+        position: relative;
+    }
+
+    .mobile_menu{
+        width: 55px;
+        height: 100%;
+        display: none;
+
+        @media(max-width:767px){
+            width: 19px;
+            height: 16px;
+            background-image: url(../jpg/menu.svg);
+            display: block;
+            background-position: center;
+            background-size: cover;
+            /* display: none; */
+            margin-top: 22px;
+            margin-left: 10px;
+        }   
+    }
+
+    .logo{
+        padding: 16px 6px 16px 10px;
+        width: 121px;
+        height: 54px; 
+
+        @media(max-width:767px){
+            position: absolute;
+            left: calc(50% - 55px);
+        }
+    }
+    .mobile_search{
+        padding: 20px 25px;
+        display: none;
+
+        @media(max-width:767px){
+            padding: 20px 25px;
+            display: block; 
+        }
+    }
+    .navL{
+        display: flex;
+
+        @media(max-width:767px){
+            display: none;
+        }
+        ul{
+            display: flex;    
+            padding: 0;
+
+            li{
+
+
+                &:hover{
+                    a{
+                      &::after{
+                        display: block;
+                        left: 6px;
+                      }  
+                    }
+                }
+                a{
+                    margin-top: 1px;
+                    margin-left: 4px;
+                    margin-right: 4px;
+                    padding: 16px 8px 10px;
+                    height: 48px;
+                    line-height: 27px;
+                    font-size: 13px;
+                    position: relative;
+                    text-decoration: none;
+                    color: black;
+
+                    &:focus{
+                        outline: black dashed 1px;
+                    }
+
+                    &::after{
+                        background: currentColor;
+                        content: "";
+                        display: none;
+                        height: 2px;
+                        position: absolute;
+                        bottom: 7px;
+                        width: calc(100% - 12px);
+                    }
+
+                    &:focus::after{
+                        
+                        left: 6px;
+                    }
+                }
+            }
+        }
+    }
+    .navR{
+        display: flex;
+        margin-left: auto;
+
+        @media(max-width:767px){
+            width: 50px;
+            height: 100%;       
+            background-image: url("../jpg/car.png");
+            background-size: cover;
+            background-position: center; 
+            display: block;
+        }
+        ul{
+            display: flex;    
+            padding: 0;
+
+            @media(max-width:767px){
+                display: none;
+            }
+
+            li{
+
+                &:hover{
+                    a{
+                        &::after{
+                            display: block;
+                            left: 6px;
+                        }
+                    }
+                }
+                a{
+                    margin-top: 1px;
+                    margin-left: 4px;
+                    margin-right: 4px;
+                    padding: 16px 8px 10px;
+                    height: 48px;
+                    line-height: 27px;
+                    font-size: 13px;    
+                    position: relative;
+                    text-decoration: none;
+                    color: black;
+
+                    &::after{
+                        background: currentColor;
+                        content: "";
+                        display: none;
+                        height: 2px;
+                        position: absolute;
+                        bottom: 7px;
+                        width: calc(100% - 12px);
+                    }
+
+                    &:focus{
+                        outline: black dashed 1px;
+
+                        &::after{
+                            
+                            left: 6px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.page{
+    .banner{
+        position: relative;
+        width: 100%;    
+        background-position: center;
+        background-size: cover;
+        
+        @media(max-width: 1080px){
+            height: unset;
+        }
+
+        @media(max-width:767px){
+            background-color: #e6e6e6;
+        }
+        img{
+
+            @media(max-width:767px){
+                height: 56vw;
+            }
+
+        }
+        .fix{
+
+            @media(max-width:767px){
+                position: unset;
+            }
+
+            .banner-title{
+
+                @media(max-width: 1080px){
+                    margin: 0 auto;
+                }
+            }            
+            
+        }
+    }
+}
+.productbar{
+    width: 100%;    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @media(max-width: 1080px){
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    @media(max-width:767px){
+        flex-wrap: wrap; 
+    }    
+}
+.xboxbanner{
+    position: relative;
+    width: 100%;        
+    background-position: center;
+    background-size: cover; 
+
+    @media(max-width: 1080px){
+        margin-top: 48px;
+    }
+
+    @media(max-width:860px){
+        height: 67.6vw;
+    }
+
+    @media(max-width:767px){
+        height:56.8vw;
+        margin-top: 48px;
+    }
+
+    .fix{
+        left: calc(5% + 5px);
+        bottom :40%;
+        text-align: inherit;
+        width: 70%;
+
+        @media(max-width:767px){
+            position: unset;
+            text-align: center;
+            width: 100%;
+        }
+
+        .banner-title{
+
+            @media(max-width:860px){
+                margin: 0 auto;
+                margin-top: 75px;
+            }
+        }
+        
+        .group{
+            a{
+                &::after{
+                    width: calc(100% - 739px);
+                }
+            }
+        }
+    }
+}
+.introduce{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    @media(max-width: 1080px){
+        flex-wrap: wrap;
+    }
+    @media(max-width:767px){
+        flex-wrap: wrap;
+    }
+    .product{
+        padding-top: 0px;
+    }
+}
+.allflex{
+    display: flex;
+    
+    @media(max-width: 1080px){
+        padding: 48px 5% 0 5%;
+    }
+
+    @media(max-width:540px){
+        padding-top: 48px;
+    }
+
+    span{
+        font-size: 15px;
+        line-height: 60px;
+        color: rgba(0,0,0,.6);
+    }
+
+    ul{
+        li{
+            @media(max-width:540px){
+                padding-left: 12px;
+            }
+
+            img{
+                width: 28px;
+                height: 28px;
+            }
+        }
+    }
+}
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background: #f2f2f2;
+    flex-wrap: wrap;
+
+    @media(max-width:767px){
+        flex-wrap: wrap;
+    }
+
+    .page{
+
+        @media(max-width: 1080px){
+            padding-left: 12px;
+        }
+    }
+}
+.footer-end{
+    display: flex;
+    justify-content: space-between;
+
+    @media(max-width: 1080px){
+        margin-left: 12px;
+        margin-bottom: 20px;
+    }
+
+    @media(max-width:767px){
+        flex-direction: column;
+        margin-left: 0px;
+    }
+
+    ul{
+        font-size: 11px;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        @media(max-width:540px){
+            padding-left: 12px;
+        }
+        li{
+            a{
+                padding-left: 0px;
+            }
+                
+            
+        }
+    }
+
+    a{
+        color:black;
+
+        @media(max-width:767px){
+            padding-left: 12px;
+        }
+    }
+    .footer{
+        .page{
+            @media(max-width:767px){
+                padding-left: 0px;
+            }
+
+            @media(max-width:540px){
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html class="no-js" dir="ltr" lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="google-site-verification" content="JS4EIqPTTTdXUXo_6N8RJ7ERI3RLQDhlp2HGmLA8Gl4" />
+        <meta property="og:title" content="Microsoft Design" />
+        <meta name="description" content="Microsoft Design" />
+        <title>Microsoft Design</title>
+        <script src="/design/modernizr-bundle.js" charset="utf-8" defer></script>
+        <script src="/design/service-worker-registration.js" charset="utf-8" async></script>
+        <link rel="stylesheet" href="https://statics-uhf-wus.akamaized.net/west-european/shell/_scrf/css/themes=default.device=uplevel_web_pc_edge/8b-498210/4c-df6a60/b6-9aa767/77-83fb73/41-e51cb1/14-a2c4e9/16-e5b082/b2-5c345c?ver=2.0" type="text/css" media="all" />
+        <link rel='stylesheet' href='https://statics-uhf-wus.akamaized.net/statics/override.css?c=1' type='text/css' />
+        <link rel="stylesheet" type="text/css" href="/design/css/fw-microsoft-design-west-european-default-blue-18102.css" id="fluent-web-stylesheet" />
+    <meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="microsoft-design"><link rel="apple-touch-icon" sizes="57x57" href="/design/icons/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/design/icons/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/design/icons/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/design/icons/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/design/icons/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/design/icons/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/design/icons/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/design/icons/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/design/icons/apple-touch-icon-180x180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="microsoft-design"><link rel="icon" type="image/png" sizes="32x32" href="/design/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/design/icons/favicon-16x16.png"><link rel="shortcut icon" href="/design/icons/favicon.ico"></head>
+    <body>
+        <div id="root"></div>
+
+        <!-- OnePlayer -->
+        <script src="https://www.microsoft.com/videoplayer/js/oneplayer.js"></script>
+
+        <!-- Telemetry -->
+        <script src="https://az725175.vo.msecnd.net/scripts/jsll-4.2.3.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            var config = {
+                coreData: {
+                    appId: "microsoftdesign"
+                }
+            };
+            awa.init(config);
+        </script>
+    <script type="text/javascript" src="/design/main.d1e1b6dea074baf04a63.js"></script></body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{
+        box-sizing: border-box;
+    }
+    .pc{
+        display: block;
+    }
+    .moblie{
+        display: none;
+    }
+    body{
+        margin: 0;
+    }
+    .nav{
+        width: 366px;
+        height: 100vh;
+        background-color: blue;
+        float: left;
+        padding-top: 75px;
+    }
+    .nav-toggle{
+        float: left;
+        width: 38px;
+        height: 38px;
+        background-color: violet;
+    }
+    .logo{
+        margin: auto;
+        width: 150px;
+        height: 150px;
+        background-color: gray;
+        margin-bottom: 60px;
+    }
+    .nav-list{
+        margin: auto;
+        width: 75px;
+    }
+    ul{
+        margin: 0;
+        padding: 0;               
+        display: inline-block;
+    }
+    li{
+        
+        list-style: none;
+        margin-bottom: 30px;
+        padding: 10px 10px;                
+        background-color: cyan;
+    }
+    .content{
+        width: calc(100% - 366px);
+        height: 100vh;
+        background-color: red;
+        float: left;
+        padding-top: calc(50vh - 285px);
+    }
+    .main-style{
+        width: 315px;
+        height: 570px;
+        float: left;
+    }
+    .bg-style{
+        background-size: cover;
+        background-position: center;
+    }        
+    .main{
+        margin: auto;
+        width: 957px;
+        height: 570px;
+        background-color: turquoise;
+
+    }
+    .main-x{
+        background-color: white;
+    }
+    .main-y{
+        background-color: yellow;
+        margin: 0 6px;
+    }
+    .main-z{
+        background-color: black;
+    }
+    @media (max-width: 1321px){
+        
+        
+        .content{
+        width: calc(100vw - 366px);
+        height: 100vh;
+        background-color: red;
+        float: left;
+        padding-top: calc(50vh - 295px);
+        }
+        .main-style{
+            width: 395px;
+            height: 275px;
+            float: left;
+        }
+        .bg-style{
+            background-size: cover;
+            background-position: center;
+        }        
+        .main{
+            margin: auto;
+            width: 800px;
+            height: 570px;            
+            background-color: turquoise;
+
+        }
+        .main-x{
+            width: 800px;
+            height: 285px;
+            margin-bottom: 10px;
+            background-color: white;
+        }
+        .main-y{
+            margin: 0;
+            margin-right: 10px;
+            background-color: yellow;            
+        }
+        .main-z{
+            margin: 0;
+            background-color: black;
+        }
+    }
+    @media (max-width: 1166px){
+        .nav{
+            width: 100vw;
+            height: 78px;
+            float: unset;
+            padding: 20px;
+        }
+        .logo{
+            width: 38px;
+            height: 38px;
+            margin-bottom: 0;
+            float: left;
+        }
+        .nav-list{
+            float: right;
+            width: unset;
+        }
+        ul{
+            display: unset;
+        }
+        li{ 
+            margin-bottom: 0;
+            display: inline-block;
+        }
+        
+        .content{
+        width: 100vw;
+        height: 100vh;
+        background-color: red;        
+        padding-top: calc(50vh - 439px);
+        }
+        .main-style{
+            width: 345px;
+            height: 390px;
+            float: left;
+        }
+        .bg-style{
+            background-size: cover;
+            background-position: center;
+        }        
+        .main{
+            margin: auto;
+            width: 700px;
+            height: 800px;
+            background-color: turquoise;
+
+        }
+        .main-x{
+            width: 700px;
+            height: 400px;
+            background-color: white;
+        }
+        .main-y{
+            background-color: yellow;
+            margin: 0 ;
+            margin-right: 10px;
+        }
+        .main-z{
+            background-color: black;
+        }
+    }
+    @media (max-width: 700px) {
+        .pc{
+            display: none;
+        }
+        .moblie{
+            display: block;
+        }
+        .nav{
+            width: 100vw;
+            height: 78px;
+            float: unset;
+            padding: 20px calc(50vw - 18px) 20px 20px;
+        }
+        .logo{
+            width: 38px;
+            height: 38px;
+            margin-bottom: 0;
+            float: right;
+        }
+        .nav-list{
+            float: right;
+            width: unset;
+        }
+        ul{
+            display: unset;
+        }
+        li{ 
+            margin-bottom: 0;
+            display: inline-block;
+        }
+        .content{
+            width: 100vw;
+            height: 150vh;
+            background-color: red;
+            float: left;
+            padding: 0;
+        }
+        .main-style{
+            width: 100%;
+            height: 50vh;
+            float: none;
+        }
+        .bg-style{
+            background-size: cover;
+            background-position: center;
+        }        
+        .main{
+            margin: auto;
+            width: 100%;
+            height: 150vh;
+            background-color: turquoise;
+
+        }
+        .main-x{
+            width: 100%;
+            height: 50vh;
+            background-color: white;
+            margin: 0;
+        }
+        .main-y{
+            background-color: yellow;
+            margin: 0;
+        }
+        .main-z{
+            background-color: black;
+        }    
+    }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="nav-toggle moblie"></div>
+        <div class="logo"></div>
+        <div class="nav-list pc">
+            <ul>
+                <li>AAAAA</li>
+                <li>BBBBB</li>
+                <li>CCCCC</li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <div class="main">
+            <div class="main-x bg-style main-style"></div>
+            <div class="main-y bg-style main-style" ></div>
+            <div class="main-z bg-style main-style"></div>
+        </div>
+    </div>
+</body>
+</html>

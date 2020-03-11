@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    /* flex 外容器屬性 */
+     /* display 外容器用於宣告使用
+        flex-flow                        ex flex-flow: <'flex-direction'>|| <'flex-wrap'> 
+            flex-direction               flex決定內元件排序方向 預設是水平排序   row(由上往下) | row-reverse(由下往上) | column(由左至右) | column-reverse(由右至左);  
+            flex-wrap                    超出範圍時是否換行的屬性   nowrap (不換行) | wrap (換行) | wrap-reverse(換行時反轉)
+        justify-content                  主軸對齊 看flex-direction的方向決定順序       flex-start | flex-end | center | space-between | space-around; 
+        align-items                      控制單排的flex-direction方向的起始點
+        align-content                    控制多排的排列方式*/
+    /* flex 內元件屬性 */
+     /* flex
+            flex-grow
+            flex-shrink
+            flex-basis
+        order
+        align-self */
+
+        /* 基準軸的對齊方式 預設水平 */
+        /* justify-content: center;     */
+        /* 與基準軸不同的軸 對齊方式 預設垂直 */
+        /* align-items:center */
+        /* 基準軸的方向 columns是指垂直 row是指水平方向 */
+        /* flex-direction: columns: ; */
+        /* 內容過多時 宣告分行 */
+        /* flex-wrap:wrap */
+        /* 用到 float 與 inline-block的 部分改寫成flex */
+    *{
+        /* 自動計算 padding神物 */
+        box-sizing: border-box;
+    }    
+    body{
+        margin: 0;
+    }
+    .all{
+        width: 100%;
+        height: 100vh;
+        background-color: teal;
+        /* flex 預設水平排列 */
+        display: flex;
+    }
+    .nav{
+        width: 366px;
+        height: 100%;
+        background-color: blue;
+        padding-top: 75px;
+        display:flex;
+        /* 將預設的水平排列改為垂直排列 */
+        flex-direction: column;
+        /* 基準軸(相反) 置中 */
+        align-items: center;            
+    }
+    .menu{
+        /* 不顯示 */
+        display: none;
+    }
+    .logo{
+        width: 150px;
+        height: 150px;
+        background-color: black;
+        margin-bottom: 60px;
+    }
+    ul{
+        margin: 0;
+        padding: 0;
+        
+    }
+    li{
+        line-height: 100px;
+        list-style: none;
+        font-size: 40px;        
+    }
+    .content{
+        width: calc(100% - 366px);
+        height: 100%;
+        background-color: red;
+        display: flex;
+        /* 下面兩行 水平垂直置中 */
+        justify-content: center;
+        align-items:center;
+    }
+    .main{
+        width: 957px;
+        height: 570px;
+        background-color: springgreen;
+        display: flex;
+        /* 三塊 靠左靠右 中間自己抓左右間隔 */
+        justify-content:space-between;
+    }
+    .main-style{
+        width: 315px;
+        height: 570px;
+    }
+    .mainx{
+        background-color: violet;
+    }
+    .mainy{
+        background-color: yellow;
+    }
+    .mainz{
+        background-color: black;
+    }
+    @media (max-width: 1321px){        
+        .main{
+            width: 800px;
+            height: 570px;
+            /*  wrap 為自動換行*/
+            flex-wrap: wrap;
+            /* justify-content: baseline;*/
+            /* align-content 用於多項  space-between 用於上下對齊標線*/
+            align-content: space-between;             
+        }
+        .main-style{
+            width: 395px;
+            height: 275px;            
+        }
+        .mainx{
+            width: 800px;
+            height: 285px;            
+        }          
+    }
+    @media (max-width: 1166px){
+        .all{
+            /* 將基準軸改成垂直 */
+            flex-direction: column;
+        }
+        .nav{
+            width: 100vw;
+            height: 78px;
+            padding-top: 0px;
+            padding: 0px 30px;
+            /* 將NAV的基準軸改成水平 */
+            flex-direction: row;
+            /* space-between 由於只有兩個 就會直接對齊到最左與最右 */
+            justify-content: space-between;           
+        }        
+        .logo{
+            width: 38px;
+            height: 38px;
+            margin-bottom: 0px;
+        }
+        ul{
+            width: 475px;
+            /* 預設基準軸為水平 */
+            display: flex;
+            /* space-between 在width設定了475px 使li自動在475px中 抓取適當的間距 */
+            justify-content: space-between;            
+        }
+        li{ 
+            line-height: 78px;
+            font-size: 30px;
+        }
+        .content{
+            width: 100%;
+            height: calc(100% - 78px);
+        }
+        .main{
+            width: 700px;
+            height: 800px;
+            /* Wrap 自動換行 */
+            flex-wrap: wrap;
+            /* justify-content: baseline;*/
+            /* space-between 將邊角對齊後 自動調整適當間距 */
+            align-content: space-between;
+        }
+        .main-style{
+            width: 345px;
+            height: 390px;
+        }
+        .mainx{
+            width: 700px;
+            height: 400px;
+        }
+    }
+    @media (max-width: 700px){       
+        
+        .menu{
+            width: 38px;
+            height: 38px;
+            background-color: teal;
+            display: block;
+        }
+        .menu:hover ~ .nav-list > .for{
+            left: 0px;
+        }
+        .logo{
+            /* 推19px的用意是因為物體從50%的地方向右擺放38px 故回推19px               */
+            margin-right: 19px;
+        }
+        ul{ 
+            width: 200px;           
+            display: block;
+            position: absolute;
+            left: -120px;
+            transition: 0.8s;            
+        }               
+        .main{
+            width: 100%;
+            height: 100%;
+            /* nowrap 將換航取消 */
+            flex-wrap: nowrap;
+            /* column 將基準軸轉為垂直 */
+            flex-direction: column;
+            /* justify-content: center;            
+            align-content: center; */
+        }
+        .main-style{
+            width: 100%;
+            height: 100%;
+        }
+        .mainx{
+            width: 100%;
+            height: 100%;
+        }          
+    }
+    </style>
+</head>
+<body>
+    <div class="all">
+        <div class="nav">
+            <div class="menu"></div>
+            <div class="logo"></div>
+            <div class="nav-list">
+                <ul class="for">
+                    <li>AAAAA</li>
+                    <li>AAAAA</li>
+                    <li>AAAAA</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="main">
+                <div class="mainx main-style"></div>
+                <div class="mainy main-style" ></div>
+                <div class="mainz main-style"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

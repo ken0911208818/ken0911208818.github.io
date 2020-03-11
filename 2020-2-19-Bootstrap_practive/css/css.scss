@@ -1,0 +1,25 @@
+$black :black;
+$main:red;
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    a{
+        text-align: center;
+        color:$black
+    }
+    img{
+        width: 100%;
+    }
+    .test{
+        p{
+          color:$main  
+        }
+    }
+}
