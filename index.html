@@ -5,33 +5,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./css/index.css">
+
 </head>
 
 <body>
+    <section class="banner">
+        <div class="mask">
+            <nav class="d-flex align-items-center pt-5">
+                <div class="col-6 ">
+                    <div class="Introduction" id="Introduction1">
+                        <h2 data-invert-x="0.5">Bing Hua'S</h2>
+                    </div>
+                    <div class="Introduction" id="Introduction2">
+                        <h2 data-depth="0.4">personal</h2>
+                    </div>
+                    <div class="Introduction" id="Introduction3">
+                        <h2 data-depth="0.6">portfolio</h2>
+                    </div>
+
+                </div>
+                <div class="col-5">
+                    <ul class="d-flex justify-content-around">
+                        <a href="#about" class="text">
+                            <li>About</li>
+                        </a>
+                        <a href="#" class="text">
+                            <li>Resume</li>
+                        </a>
+                        <a href="#" class="text">
+                            <li>Skills</li>
+                        </a>
+                        <a href="#" class="text">
+                            <li>Portfolio</li>
+                        </a>
+                        <a href="#" class="text">
+                            <li>Content</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="col-1"></div>
+            </nav>
+        </div>
+
+
+    </section>
     <section>
-        <nav class="d-flex align-items-center pt-5">
-            <div class="col-6 d-flex">
-                <div class="Introduction">
-                    <h2>Bing Hua'S</h2>
-                    <h2>personal</h2>
-                    <h2>portfolio</h2>
+        <div class="about" id="about">
+            <div class="title">About</div>
+            <div class="container d-flex justify-content-center align-items-start">
+                <div class="borde text-left col-6" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1500">
+                    <a href="#" id="my">我</a>
+                    <div class="text">熱愛程式</div>
+                    <div class="text">期望持續進步</div>
+                    <div class="text">目標是建立一個優雅操作的平台</div>
+                    <div class="text">讓使用者更加順暢的使用</div>
+                    <div class="text">歡迎觀看我的<a href="#">作品</a></div>
+                    <div class="text">在未來會繼續精進</div>
+                    <div class="text">如果喜歡我的作品</div>
+                    <div class="text">或者任何工作機會</div>
+                    <div class="text">歡迎與我<a href="#">聯絡</a></div>
+                </div>
+                <div class="picture col-6" >
+                    <img class="img-fluid" src="./img/office-865091_1920.jpg" alt="" srcset="">
+                    <div class="avater" ></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    </div>
+    <section>
+        <div class="skills">
+            <div class="title">Skills</div>
+            <div class="container d-flex justify-content-between" data-aos="zoom-in" data-aos-delay="300"
+                data-aos-duration="1500">
+                <div class="con-title">前端技能
+                    <ul>
+                        <li>html5</li>
+                        <li>css</li>
+                        <li>Scss</li>
+                        <li>javascript</li>
+                        <li>JQuery</li>
+                    </ul>
+                </div>
+                <div class="con-title">後端技能
+                    <ul>
+                        <li>PHP</li>
+                        <li>MySQL</li>
+                        <li>Laravel</li>
+                    </ul>
+                </div>
+                <div class="con-title">未來目標
+                    <ul>
+                        <li>Vue.js</li>
+                        <li>Javascript 30day</li>
+                        <li>部署AWS</li>
+                    </ul>
                 </div>
             </div>
-            <div class="col-5">
-                <ul class="d-flex justify-content-around">
-                    <li>About</li>
-                    <li>Portfolio</li>
-                    <li>Resume</li>
-                    <li>Skills</li>
-                    <li>Content</li>
-                </ul>
-            </div>
-            <div class="col-1"></div>
-        </nav>
 
+
+        </div>
+    </section>
+    <section>
+        <div class="Portfolio">
+            <div class="title">Portfolio</div>
+            <div class="container"></div>
+        </div>
     </section>
 
 
@@ -45,6 +133,34 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script>
+        var scene1 = document.getElementById('Introduction1');
+        var scene2 = document.getElementById('Introduction2');
+        var scene3 = document.getElementById('Introduction3');
+        var parallaxInstance = new Parallax(scene1, {
+            relativeInput: true
+        });
+        var parallaxInstance = new Parallax(scene2, {
+            relativeInput: true
+        });
+        var parallaxInstance = new Parallax(scene3, {
+            relativeInput: true
+        });
+
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        $('#my').mouseover(function(){
+            $('.avater').addClass('active');
+        })
+        $('#my').mouseout(function(){
+            $('.avater').removeClass('active');
+        })
+    </script>
 </body>
 
 </html>

@@ -1,12 +1,165 @@
-body{
-    margin:0;
-}
-ul{
+body {
     margin: 0;
-    list-style: none;
-    padding: 0;    
+    font-family: 'Noto Sans TC', sans-serif;
 }
 
-.Introduction{
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,300,600,700,800);
+$banner-front-color:white;
+$main-color:#999488;
+ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+.Introduction {
     padding-left: 200px;
+}
+
+a {
+    position: relative;
+    color: black;
+
+
+
+    &::after {}
+}
+.title {
+    color: #2c2c2c;
+   
+    letter-spacing: .05em;
+    text-shadow:
+        4px 4px 0px #d5d5d5,
+        7px 7px 0px rgba(0, 0, 0, 0.2);
+    padding-left: 215px;
+    font-size: 3rem;
+}
+
+.banner {
+    height: 100vh;
+    width: 100%;
+    background-image: url("../img/home-office-336373_1920.jpg");
+    background-position: center;
+    .mask{
+        background-color: rgba($color: #000000, $alpha: 0.3);
+        width: 100%;
+        height: 100%;
+        
+        
+        nav{
+            height: 138px;
+                       
+        }
+    }
+    nav {
+        color: $banner-front-color;
+
+        .col-5 {
+            ul {
+                a {
+                    color: $banner-front-color;
+
+                    &:hover {
+
+                        text-decoration: none;
+
+                        &::after {
+                            opacity: 1;
+                            bottom: 2px;
+                        }
+                    }
+
+                    &::after {
+                        color: $banner-front-color;
+                        background-color: $banner-front-color;
+                        content: "";
+                        position: absolute;
+                        left: 0px;
+                        bottom: -6px;
+                        width: 100%;
+                        opacity: 0;
+                        height: 1px;
+
+                        -webkit-transition: all 200ms linear 0ms;
+                        transition: all 200ms linear 0ms;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.about {
+    padding-top: 50px;
+    height: 70vh;
+    width: 100%;
+    background-color: $main-color;
+    
+
+    .container {
+        
+        
+        a{
+            font-size: 2rem;
+        }
+        .text{
+            font-size: 1.5rem;
+            a{
+                font-size: 2.1rem;
+            }
+        }
+        .picture{
+            .img-fluid{
+                z-index: 3;
+                position: relative;
+            }
+        }
+    }
+}
+
+.avater{
+    width: 160px;
+    height: 160px;
+    background-color: greenyellow;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    border-style: solid;
+    border-color: white;
+    border-width: 5px;
+    border-radius: 80px;
+    background-image: url(../img/logo.jpg);
+    background-size: cover;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0,0.5);
+    z-index: 1;
+    transition:1s;
+
+}
+.avater.active{
+    left:-150px;
+    transition: 1s;
+}
+
+.skills{
+    background-color: $main-color;
+    height: 70vh;
+    width: 100%;
+    padding-top: 50px;
+    .container{
+        padding-top:50px;
+
+        .con-title{
+            font-size: 2.5rem;
+            ul{
+                padding-top: 20px;
+                li{
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
+.Portfolio{
+    background-color: $main-color;
+    width: 100%;
 }
