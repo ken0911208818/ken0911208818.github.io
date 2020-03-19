@@ -30,8 +30,8 @@
                     </div>
 
                 </div>
-                <div class="col-5">
-                    <ul class="d-flex justify-content-around">
+                <div class=" col-5">
+                    <!-- <ul class="d-flex justify-content-around">
                         <a href="#about" class="text">
                             <li>About</li>
                         </a>
@@ -47,7 +47,37 @@
                         <a href="#" class="text">
                             <li>Content</li>
                         </a>
-                    </ul>
+                    </ul> -->
+                    <nav class="navbar navbar-expand-lg navbar-light ">
+                        
+                        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-bars" style="color: white;
+                            font-size: 40px;"></i>
+                        </button>
+                      
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                          <ul class="navbar-nav " >
+                            <a href="#about" class="text nav-item active">
+                                <li class="nav-link" style="color:white;"><span>About</span>
+                                    </li>
+                            </a>
+                            <a href="#" class="text nav-item active">
+                                <li class="nav-link" style="color:white;"><span>Resume</span></li>
+                            </a>
+                            <a href="#skills" class="text nav-item active">
+                                <li class="nav-link" style="color:white;"><span>Skills</span></li>
+                            </a>
+                            <a href="#Portfolio" class="text nav-item active">
+                                <li class="nav-link" style="color:white;"><span>Portfolio</span></li>
+                            </a>
+                            <a href="#Content" class="text nav-item active">
+                                <li class="nav-link" style="color:white;"><span>Content</span></li>
+                            </a>
+
+                            
+                          </ul>                          
+                        </div>
+                      </nav>
                 </div>
                 <div class="col-1"></div>
             </nav>
@@ -58,20 +88,20 @@
     <section>
         <div class="about" id="about">
             <div class="title">About</div>
-            <div class="container d-flex justify-content-center align-items-start">
-                <div class="borde text-left col-6" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1500">
+            <div class="container d-flex justify-content-center align-items-start flex-wrap">
+                <div class="borde text-left pt-4 col-md-6 col-12" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1500">
                     <a href="#" id="my">我</a>
                     <div class="text">熱愛程式</div>
                     <div class="text">期望持續進步</div>
                     <div class="text">目標是建立一個優雅操作的平台</div>
                     <div class="text">讓使用者更加順暢的使用</div>
-                    <div class="text">歡迎觀看我的<a href="#">作品</a></div>
+                    <div class="text">歡迎觀看我的<a href="#">作品</a></div>                    
                     <div class="text">在未來會繼續精進</div>
                     <div class="text">如果喜歡我的作品</div>
                     <div class="text">或者任何工作機會</div>
                     <div class="text">歡迎與我<a href="#">聯絡</a></div>
                 </div>
-                <div class="picture col-6" >
+                <div class="picture col-md-6 col-12 pt-4" >
                     <img class="img-fluid" src="./img/office-865091_1920.jpg" alt="" srcset="">
                     <div class="avater" ></div>
                 </div>
@@ -84,11 +114,11 @@
 
     </div>
     <section>
-        <div class="skills">
+        <div class="skills" id="skills">
             <div class="title">Skills</div>
-            <div class="container d-flex justify-content-between" data-aos="zoom-in" data-aos-delay="300"
+            <div class="container d-flex justify-content-between flex-wrap" data-aos="zoom-in" data-aos-delay="300"
                 data-aos-duration="1500">
-                <div class="con-title">前端技能
+                <div class="con-title col-sm-12 col-md-4">前端技能
                     <ul>
                         <li>html5</li>
                         <li>css</li>
@@ -97,14 +127,14 @@
                         <li>JQuery</li>
                     </ul>
                 </div>
-                <div class="con-title">後端技能
+                <div class="con-title col-sm-12 col-md-4">後端技能
                     <ul>
                         <li>PHP</li>
                         <li>MySQL</li>
                         <li>Laravel</li>
                     </ul>
                 </div>
-                <div class="con-title">未來目標
+                <div class="con-title col-sm-12 col-md-4">未來目標
                     <ul>
                         <li>Vue.js</li>
                         <li>Javascript 30day</li>
@@ -117,16 +147,16 @@
         </div>
     </section>
     <section>
-        <div class="Portfolio">
+        <div class="Portfolio" id="Portfolio">
             <div class="title">Portfolio</div>
             <div class="container">
                 <div class="all">
                     <div class="tit text-left">Microsoft – Fluent Design System / 仿切</div>
-                    <div class="main d-flex ">
-                        <div class="col-6">
+                    <div class="main d-flex flex-wrap justify-content-end">
+                        <div class=" col-sm-12 col-xl-6 ">
                             <img src="./img/Fluent Design.png" alt="" srcset="" class="img-fluid border border-warning ">
                         </div>
-                        <div class="col-6">
+                        <div class="col-xl-6 col-sm-12 pt-3">
                             <span>2020-02-23</span><br>
                             <span>加強</span>
                             <span>Html</span>
@@ -142,13 +172,13 @@
                             
                                                         
                         </div>
-                        <a href="https://ken0911208818.github.io/2020-2-23-FluentDesign/Fluent%20Design/" class="mask">
+                        <a href="https://ken0911208818.github.io/2020-2-23-FluentDesign/Fluent%20Design/" class="mask mt-3">
                             Views
                             <span class="fas fa-arrow-circle-right"></span>                       
                         </a>
                         
                     </div>
-                    <div class="col-6 pt-4">
+                    <div class="col-xl-6 col-12 pt-4">
                         <span>技能關鍵字:</span>
                         <span>Html</span>
                         <span>、</span>
@@ -162,11 +192,11 @@
                 <hr>
                 <div class="all">
                     <div class="tit text-left">Windows仿切</div>
-                    <div class="main d-flex ">
-                        <div class="col-6">
+                    <div class="main d-flex flex-wrap justify-content-end">
+                        <div class="col-sm-12 col-xl-6">
                             <img src="./img/microsoft.png" alt="" srcset="" class="img-fluid border border-warning ">
                         </div>
-                        <div class="col-6">
+                        <div class="col-xl-6 col-sm-12 pt-3">
                             <span>2020-02-20</span><br>
                             <span>加強</span>
                             <span>Html</span>
@@ -175,13 +205,13 @@
                             <span>效果練習</span><br>
                             <span>RWD排版</span>                                                      
                         </div>
-                        <a href="https://ken0911208818.github.io/2020-2-20-Microsoft(SCSS)/SCSS/" class="mask">
+                        <a href="https://ken0911208818.github.io/2020-2-20-Microsoft(SCSS)/SCSS/" class="mask mt-3">
                             Views
                             <span class="fas fa-arrow-circle-right"></span>                       
                         </a>
                         
                     </div>
-                    <div class="col-6 pt-4">
+                    <div class="col-xl-6 col-12 pt-4">
                         <span>技能關鍵字:</span>
                         <span>Html</span>
                         <span>、</span>
@@ -193,11 +223,11 @@
                 <hr>
                 <div class="all">
                     <div class="tit text-left">Bootstrap Practive</div>
-                    <div class="main d-flex ">
-                        <div class="col-6">
+                    <div class="main d-flex flex-wrap justify-content-end">
+                        <div class="col-sm-12 col-xl-6">
                             <img src="./img/bootstrap.png" alt="" srcset="" class="img-fluid border border-warning ">
                         </div>
-                        <div class="col-6">
+                        <div class="col-xl-6 col-sm-12 pt-3">
                             <span>2020-02-19</span><br>
                             <span>使用</span>
                             <span>Bootstrap</span>
@@ -207,13 +237,13 @@
                             <span>抓取卷軸高度顯示成進度條的樣子</span><br>
                             <span>根據高度決定百分比</span>
                         </div>
-                        <a href="https://ken0911208818.github.io/2020-2-19-Bootstrap_practive/" class="mask">
+                        <a href="https://ken0911208818.github.io/2020-2-19-Bootstrap_practive/" class="mask mt-3">
                             Views
                             <span class="fas fa-arrow-circle-right"></span>                       
                         </a>
                         
                     </div>
-                    <div class="col-6 pt-4">
+                    <div class="col-xl-6 col-12 pt-4">
                         <span>技能關鍵字:</span>
                         <span>Bootstrap</span>
                         <span>、</span>
@@ -223,11 +253,11 @@
                 <hr>
                 <div class="all">
                     <div class="tit text-left">串接天氣API</div>
-                    <div class="main d-flex ">
-                        <div class="col-6">
+                    <div class="main d-flex flex-wrap justify-content-end">
+                        <div class="col-sm-12 col-xl-6">
                             <img src="./img/API.png" alt="" srcset="" class="img-fluid border border-warning ">
                         </div>
-                        <div class="col-6">
+                        <div class="col-xl-6 col-sm-12 pt-3">
                             <span>2020-02-17</span><br>
                             <span>使用</span>
                             <span>台灣氣象局</span>
@@ -237,13 +267,13 @@
                             <span>解析資料後渲染成頁面</span><br>
                             <span>根據天氣狀況轉換成不同的天氣圖片</span>
                         </div>
-                        <a href="https://reurl.cc/Aqq4be" class="mask">
+                        <a href="https://reurl.cc/Aqq4be" class="mask mt-3">
                             Views
                             <span class="fas fa-arrow-circle-right"></span>                       
                         </a>
                         
                     </div>
-                    <div class="col-6 pt-4">
+                    <div class="col-xl-6 col-12 pt-4">
                         <span>技能關鍵字:</span>
                         <span>JQuery</span>
                         <span>、</span>
@@ -253,11 +283,11 @@
                 <hr>
                 <div class="all">
                     <div class="tit text-left">練習Flex屬性 RWD排版</div>
-                    <div class="main d-flex ">
-                        <div class="col-6">
+                    <div class="main d-flex flex-wrap justify-content-end">
+                        <div class="col-sm-12 col-xl-6">
                             <img src="./img/flex(RWD).png" alt="" srcset="" class="img-fluid border border-warning ">
                         </div>
-                        <div class="col-6">
+                        <div class="col-xl-6 col-sm-12 pt-3">
                             <span>2020-02-06</span><br>
                             <span>使用</span>
                             <span>flex排版</span><br>
@@ -268,13 +298,13 @@
                             <span>手機板時也能收合NavBar</span>
                             <span></span>
                         </div>
-                        <a href="https://ken0911208818.github.io/2020-2-4%20parallax/" class="mask">
+                        <a href="https://ken0911208818.github.io/2020-2-4%20parallax/" class="mask mt-3">
                             Views
                             <span class="fas fa-arrow-circle-right"></span>                       
                         </a>
                         
                     </div>
-                    <div class="col-6 pt-4">
+                    <div class="col-xl-6 col-12 pt-4">
                         <span>技能關鍵字:</span>
                         <span>RWD</span>
                         <span>、</span>
@@ -284,11 +314,11 @@
                 <hr>
                 <div class="all">
                     <div class="tit text-left">練習Html Css Parallax</div>
-                    <div class="main d-flex ">
-                        <div class="col-6">
+                    <div class="main d-flex flex-wrap justify-content-end">
+                        <div class="col-sm-12 col-xl-6">
                             <img src="./img/parallax.png" alt="" srcset="" class="img-fluid border border-warning ">
                         </div>
-                        <div class="col-6">
+                        <div class="col-xl-6 col-sm-12 pt-3">
                             <span>2020-02-04</span><br>
                             <span>初入網頁，使用</span>
                             <span>parallax</span>
@@ -297,13 +327,13 @@
                             <span>將logo與nav固定在最上方</span>
                             <span></span>
                         </div>
-                        <a href="https://ken0911208818.github.io/2020-2-4%20parallax/" class="mask">
+                        <a href="https://ken0911208818.github.io/2020-2-4%20parallax/" class="mask mt-3">
                             Views
                             <span class="fas fa-arrow-circle-right"></span>                       
                         </a>
                         
                     </div>
-                    <div class="col-6 pt-4">
+                    <div class="col-xl-6 col-12 pt-4">
                         <span>技能關鍵字:</span>
                         <span>html</span>
                         <span>、</span>
@@ -314,7 +344,36 @@
             </div>
         </div>
     </section>
-
+    <section>
+        <div class="Content" id="Content">
+            <div class="title">Content</div>
+            <div class=" main d-flex justify-content-center">
+                <div class="MY" ></div>
+            </div>
+            <div class="my-about text-center">
+                ken
+            </div>
+            <div class="my-email text-center">
+                <i class="fa fa-envelope mail" aria-hidden="true"></i>
+                ken0911208818@gmail.com
+            </div>
+            <div class="Community d-flex justify-content-center">
+                <a href="https://github.com/ken0911208818/ken0911208818.github.io" target="_blank">
+                    <i class="fab fa-github "></i>
+                </a>
+                <a href="https://www.cakeresume.com/s--TWTvzLBbiM1DuoW9tjnWnQ--/ken61015ken">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="footer text-center">
+            <div class="copyright">
+                Copyright © Ken All rights reserved
+            </div>
+        </div>
+    </section>
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
