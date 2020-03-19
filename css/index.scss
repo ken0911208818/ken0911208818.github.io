@@ -1,8 +1,12 @@
 body {
     margin: 0;
     font-family: 'Noto Sans TC', sans-serif;
+    
 }
-
+html{
+    scroll-behavior: smooth;
+    
+}
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,300,600,700,800);
 $banner-front-color:white;
 $main-color:#999488;
@@ -36,7 +40,8 @@ a {
         7px 7px 0px rgba(0, 0, 0, 0.2);
     padding-left: 9%;
     font-size: 3rem;
-    @media (max-width :576px){
+
+    @media (max-width :576px) {
         padding-left: 15px;
     }
 }
@@ -190,7 +195,9 @@ a {
         width: 140px;
         height: 140px;
         border-radius: 70px;
-        bottom: 2px;
+        left: unset;
+        right: 20px;
+        top: 30px;
     }
 
 }
@@ -198,26 +205,42 @@ a {
 .avater.active {
     left: -150px;
     transition: 1s;
+
+    @media (max-width: 768px) {
+        left: unset;
+        top: -120px;
+    }
 }
 
 .skills {
     background-color: #BF702A;
-    
+
     width: 100%;
     padding-top: 50px;
 
     .container {
         padding-top: 50px;
         padding-bottom: 50px;
+
         .con-title {
             font-size: 2.5rem;
             padding: 30px 0;
             
             ul {
                 padding-top: 20px;
-
+                
                 li {
                     font-size: 2rem;
+                    
+                    a {
+                        text-decoration: none;
+
+                        &:hover {
+                            transition: 1.5s;
+                            font-size: 2.5rem;
+                            color: white;
+                        }
+                    }
                 }
             }
         }
@@ -249,6 +272,13 @@ a {
         font-size: 20px;
         left: 40%;
         bottom: -5%;
+
+        @media (max-width:1200px) {
+            position: unset;
+            left: unset;
+            margin-right: 15px;
+        }
+
         @media (max-width:768px) {
             font-size: 15px;
             max-width: 100%;
@@ -293,6 +323,12 @@ a {
             box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
             z-index: 1;
             transition: 1s;
+
+            @media (max-width:578px) {
+                width: 200px;
+                height: 200px;
+                border-radius: 100px;
+            }
         }
     }
 

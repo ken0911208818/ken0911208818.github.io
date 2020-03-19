@@ -4,6 +4,10 @@ body {
   font-family: 'Noto Sans TC', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 ul {
   margin: 0;
   list-style: none;
@@ -17,6 +21,7 @@ ul {
 a {
   position: relative;
   color: black;
+  text-decoration: none;
 }
 
 .title {
@@ -172,7 +177,9 @@ a {
     width: 140px;
     height: 140px;
     border-radius: 70px;
-    bottom: 2px;
+    left: unset;
+    right: 20px;
+    top: 30px;
   }
 }
 
@@ -180,6 +187,13 @@ a {
   left: -150px;
   -webkit-transition: 1s;
   transition: 1s;
+}
+
+@media (max-width: 768px) {
+  .avater.active {
+    left: unset;
+    top: -120px;
+  }
 }
 
 .skills {
@@ -204,6 +218,17 @@ a {
 
 .skills .container .con-title ul li {
   font-size: 2rem;
+}
+
+.skills .container .con-title ul li a {
+  text-decoration: none;
+}
+
+.skills .container .con-title ul li a:hover {
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  font-size: 2.5rem;
+  color: white;
 }
 
 .Portfolio {
@@ -232,6 +257,14 @@ a {
   font-size: 20px;
   left: 40%;
   bottom: -5%;
+}
+
+@media (max-width: 1200px) {
+  .Portfolio .mask {
+    position: unset;
+    left: unset;
+    margin-right: 15px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -281,6 +314,14 @@ a {
   z-index: 1;
   -webkit-transition: 1s;
   transition: 1s;
+}
+
+@media (max-width: 578px) {
+  .Content .main .MY {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+  }
 }
 
 .Content .my-about {
